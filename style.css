@@ -40,7 +40,8 @@
 /* For flexbox / grid */
 body {
   position: absolute;
-  width: 100%;
+  width: 720px;
+  height: 1280px;
 }
 
 /*  Header class */
@@ -70,60 +71,48 @@ header {
   width: 100%;
 }
 
-/* Fake buttons */
+/* Countdown */
 
-.fake-wtb-button {
-  height: 160px;
-  width: 660px;
-  position: absolute;
-  top: 549px;
-  left: 30px;
-  z-index: 10;
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
 }
 
-.fake-results-button {
-  height: 180px;
-  width: 660px;
-  position: absolute;
-  top: 709px;
-  left: 30px;
-  z-index: 10;
+/* Cheeto Splash */
+
+.splash-card h2 {
+  display: flex;
+  width: 100%;
+  padding-left: 100px;
 }
 
-.fake-map-button {
-  height: 220px;
-  width: 660px;
-  position: absolute;
-  top: 889px;
-  left: 30px;
-  z-index: 10;
+.splash-card img {
+  display: flex;
+  width: 60%;
+  padding-left: 300px;
 }
 
-.fake-wtb-button-exp {
-  height: 160px;
-  width: 660px;
-  position: absolute;
-  top: 919px;
-  left: 30px;
-  z-index: 10;
+/* Race Times Button and Dropdown */
+
+.race-time-button {
+  display: flex;
+  justify-self: center;
+  height: 64px;
+  width: 310px;
 }
 
-.fake-results-button-exp {
-  height: 180px;
-  width: 660px;
-  position: absolute;
-  top: 1079px;
-  left: 30px;
-  z-index: 10;
-}
+/* Nav Cards */
 
-.fake-map-button-exp {
-  height: 220px;
-  width: 660px;
+
+/* Main Page Footer Background */
+.main-footer-bg {
+  background-color: var(--cream);
+  height: 171px;
   position: absolute;
-  top: 1219px;
-  left: 30px;
-  z-index: 10;
+  top: 1130px;
+  width: 100%;
 }
 
 /*  Footer class */
@@ -165,6 +154,7 @@ h3 {
 span {
   font-size: 12px;
 }
+
 
 
 /* Phone dimmensions */
