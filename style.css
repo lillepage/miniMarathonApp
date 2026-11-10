@@ -39,7 +39,6 @@
 
 /* For flexbox / grid */
 body {
-  position: absolute;
   width: 720px;
   height: 1280px;
 }
@@ -85,7 +84,7 @@ header {
 .splash-card h2 {
   display: flex;
   width: 100%;
-  padding-left: 100px;
+  justify-content: center;
 }
 
 .splash-card img {
@@ -103,16 +102,81 @@ header {
   width: 310px;
 }
 
+.race-time-expand {
+  display: flex;
+  justify-self: center;
+  margin-top: -64px;
+}
+
 /* Nav Cards */
 
+.nav {
+  display: flex;
+  width: 720px;
+  justify-self: center;
+  flex: 1 1 auto;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-card {
+  position: absolute;
+  left: 70px;
+  padding-top: 30px;
+}
+
+.nav h1 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  z-index: 5;
+}
+
+#wtb-text {
+  position: relative;
+  top: -420px;
+}
+
+#results-card {
+  padding-top: 160px;
+}
+
+#results-text {
+  position: relative;
+  top: -280px;
+}
+
+#map-card {
+  padding-top: 220px;
+}
+
+#map-text {
+  position: relative;
+  top: -240px;
+}
 
 /* Main Page Footer Background */
 .main-footer-bg {
+  display: inline-flex;
   background-color: var(--cream);
   height: 171px;
   position: absolute;
-  top: 1130px;
+  top: 1110px;
   width: 100%;
+}
+
+.main-footer-bg img {
+  height: 50%;
+  padding-left: 31px;
+  padding-top: 42px;
+}
+
+.main-footer-bg-text {
+  padding-top: 16px;
+  padding-left: 16px;
 }
 
 /*  Footer class */
@@ -124,7 +188,7 @@ footer {
   display: flex;
   flex-direction: inline;
   justify-content: space-around;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 footer img {
