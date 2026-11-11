@@ -184,7 +184,7 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   flex-direction: inline;
   justify-content: space-around;
@@ -193,6 +193,7 @@ footer {
 
 footer img {
   width: 12rem;
+
 }
 
 /* Only for Countdown */
@@ -216,7 +217,7 @@ h3 {
 
 /* Toggles */
 span {
-  font-size: 12px;
+  font-size: 24px;
 }
 
 
@@ -486,31 +487,8 @@ span {
   left: 30%;
 }
 
-.cheeto-backpack,
-.cheeto-backpack-warm,
-.cheeto-backpack-athletic,
-.cheeto-backpack-shoes-athletic {
-  max-width: 339px;
-  height: auto;
-}
-
 .cheeto-backpack {
-  /* to position the mascot */
-  margin-top: -86px;
-  margin-left: 270px;
-}
-
-.cheeto-backpack-warm {
-  /* to position the mascot */
-  margin-top: -66px;
-  margin-left: 270px;
-}
-
-.cheeto-backpack-athletic,
-.cheeto-backpack-shoes-athletic {
-  /* to position the mascot */
-  margin-top: -47px;
-  margin-left: 270px;
+  width: 100%;
 }
 
 .options-container {
@@ -580,100 +558,6 @@ span {
 
 .btn-snack {
   background-color: var(--blue);
-}
-
-
-
-/* Phone dimmensions */
-@media (max-width: 402px) {
-
-  .wtb-title {
-    font-family: 'Nunito';
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-left: 31px;
-    margin-bottom: 30px;
-  }
-
-  header img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .speech-bubble {
-    position: relative;
-  }
-
-  section img {
-    max-width: 340px;
-    height: 128px;
-    display: block;
-  }
-
-  .speech-bubble p {
-    position: absolute;
-    font-family: 'Helvetica Rounded';
-    font-size: 24px;
-    top: 20%;
-    left: 15%;
-  }
-
-  .cheeto-backpack {
-    margin-top: -70px;
-    margin-left: 95px;
-    width: 305px;
-    height: 195px;
-    object-fit: contain;
-  }
-
-  .cheeto-backpack-athletic,
-  .cheeto-backpack-warm,
-  .cheeto-backpack-shoes-athletic {
-    margin-top: -38px;
-    margin-left: 95px;
-    width: 305px;
-    height: 195px;
-    object-fit: contain;
-  }
-
-  .options-container {
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .option-btn {
-    width: 100%;
-    max-height: 57px;
-    font-size: 16px;
-  }
-
-  body {
-    width: 100%;
-    max-width: 402px;
-  }
-
-  .status-circle {
-    /* circle on right side of the button */
-    max-width: 32px;
-    max-height: 32px;
-    background-color: var(--off-white);
-    border-radius: 100%;
-    position: absolute;
-    right: 22px;
-  }
-
-  .selector {
-    max-width: 32px;
-    max-height: 32px;
-    border-radius: 100%;
-    position: absolute;
-    right: 22px;
-  }
 }
 
 /* BREAK 3 - Results */
