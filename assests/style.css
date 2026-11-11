@@ -1,0 +1,634 @@
+/* Helvetica Rounded */
+@font-face {
+  font-family: 'Helvetica Rounded';
+  src: url('fonts/helvetica-rounded.woff2') format('woff2'),
+    url('fonts/helvetica-rounded.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Nunito */
+@font-face {
+  font-family: 'Nunito';
+  src: url('fonts/nunito.woff2') format('woff2'),
+    url('fonts/nunito.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Set var names across app */
+/* How to use dashed indents: declared name `--name` sets value.
+ Use in later code with  ` value: var(--name) `
+ Why? You can change the whole app just by changing the variable here. */
+:root {
+  --off-white: #F4F4F4;
+  --cream: #F7EBC0;
+  --yellow: #FAE100;
+  --orange: #F8B04D;
+  --pure-red: #F00;
+  --blue: #32ACE1;
+  --green: #19A64F;
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/* For flexbox / grid */
+body {
+  width: 720px;
+  height: 1280px;
+}
+
+/*  Header class */
+header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: inline;
+  background-color: var(--yellow);
+  align-items: center;
+  color: black;
+}
+
+#mini-logo {
+  width: 100px;
+  padding-left: 10px;
+}
+
+#lang-button {
+  margin-left: auto;
+  padding-right: 40px;
+}
+
+.main-body img {
+  width: 100%;
+}
+
+/* Countdown */
+
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+/* Cheeto Splash */
+
+.splash-card h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.splash-card img {
+  display: flex;
+  width: 60%;
+  padding-left: 300px;
+}
+
+/* Race Times Button and Dropdown */
+
+.race-time-button {
+  display: flex;
+  justify-self: center;
+  height: 64px;
+  width: 310px;
+}
+
+.race-time-expand {
+  display: flex;
+  justify-self: center;
+  margin-top: -64px;
+}
+
+/* Nav Cards */
+
+.nav {
+  display: flex;
+  width: 720px;
+  justify-self: center;
+  flex: 1 1 auto;
+}
+
+.nav-container {
+  position: relative;
+}
+
+.nav-card {
+  position: absolute;
+  left: 70px;
+  padding-top: 30px;
+}
+
+.nav h1 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  z-index: 5;
+}
+
+#wtb-text {
+  position: relative;
+  top: -420px;
+}
+
+#results-card {
+  padding-top: 160px;
+}
+
+#results-text {
+  position: relative;
+  top: -280px;
+}
+
+#map-card {
+  padding-top: 220px;
+}
+
+#map-text {
+  position: relative;
+  top: -240px;
+}
+
+/* Main Page Footer Background */
+.main-footer-bg {
+  display: inline-flex;
+  background-color: var(--cream);
+  height: 171px;
+  position: absolute;
+  top: 1110px;
+  width: 100%;
+}
+
+.main-footer-bg img {
+  height: 50%;
+  padding-left: 31px;
+  padding-top: 42px;
+}
+
+.main-footer-bg-text {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.extend-footer-bg {
+  display: inline-flex;
+  background-color: var(--cream);
+  height: 171px;
+  position: absolute;
+  top: 1281px;
+  width: 100%;
+}
+
+.extend-footer-bg img {
+  height: 50%;
+  padding-left: 31px;
+  padding-top: 42px;
+}
+
+.extend-footer-bg-text {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+/*  Footer class */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+footer img {
+  width: 12rem;
+
+}
+
+/* Only for Countdown */
+h1 {
+  font-family: 'Helvetica Rounded';
+  font-size: 48px;
+}
+
+/* Header title */
+h2 {
+  display: inline;
+  font-family: 'Helvetica Rounded';
+  font-size: 24px;
+}
+
+/*  All titles 24px */
+h3 {
+  font-family: 'Helvetica Rounded';
+  font-size: 16px;
+}
+
+/* Toggles */
+span {
+  font-size: 24px;
+}
+
+
+
+/* Phone dimmensions */
+@media (max-width: 408) {
+  /*conditions  */
+}
+
+/* Tablet dimmensions */
+@media (max-width: 800) {
+  /*conditions  */
+}
+
+
+/* BREAK - For Map and First Aid */
+
+/* The Map main Page and future map pages specific globals */
+
+.map-page {
+  background-color: var(--cream);
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.map-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.map-page * {
+  box-sizing: border-box;
+}
+
+/*Flex box for the map only*/
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 120px;
+}
+
+.map-container img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Flex box for the icons*/
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+
+/* the icons themselves*/
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+
+  flex: 0 0 calc((100% -90px) / 4);
+  aspect-ratio: 1;
+  max-width: 170px;
+}
+
+.icons img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* First Aid Page */
+
+.first-aid-page {
+  background-color: var(--off-white);
+}
+
+/* Main page conatiner and page specific globals */
+
+.first-aid-page {
+  box-sizing: border-box;
+  background-color: var(--off-white);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.first-aid-page * {
+  box-sizing: border-box;
+}
+
+.first-aid-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aid-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  width: 100%;
+  min-height: 100vh;
+  padding: 6vh 3vw;
+  padding-top: 140px;
+}
+
+/* Box for map and cheeto*/
+
+.aid-page-map {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85%;
+  padding: 30px 5%;
+  background-color: var(--cream);
+  border: 1.5px solid black;
+  border-radius: 16px;
+}
+
+.aid-page-map h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Call 112 bit*/
+
+.emergency-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 85%;
+}
+
+.emergency-contact h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.emergency-contact img {
+  width: 20px;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Information to provide */
+
+.provide-information {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 85%;
+  padding: 50px 8%;
+  background-color: var(--cream);
+  border: 1.5px solid black;
+  border-radius: 16px;
+}
+
+.provide-information h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.information-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.information-icons img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.information-icons p {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left bottom;
+  margin: 25px 0 0 0;
+  flex: 1;
+}
+
+/* teture experimenr for first aid page
+
+.first-aid-page .aid-page-map,
+.first-aid-page .provide-information {
+    background-color: var(--cream);
+    mask-image: url("assets/paper-texture.jpg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+} */
+
+/* Media Query for iphone */
+
+@media screen and (max-width: 400px) {
+
+  .map-page h1,
+  .map-page h2,
+  .map-page h3,
+  .map-page p,
+  .first-aid-page h1,
+  .first-aid-page h2,
+  .first-aid-page h3,
+  .first-aid-page p {
+    font-size: 16px;
+  }
+
+  .first-aid-page .emergency-contact img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+/* BREAK 2 - For What To Bring */
+
+/* For flexbox / grid */
+
+.wtb-title {
+  /* styling for the title. Didn't use the h3 tag because I also used instructions for positioning, and they are only meant for this title */
+  font-family: 'Nunito';
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 72px;
+  margin-left: 76px;
+  margin-bottom: 24px;
+}
+
+.speech-bubble {
+  /* reference parent for positioning */
+  position: relative;
+}
+
+.speech-bubble img {
+  /*   the display block makes the image expand to the width of the parent container, and the margin auto centers it */
+  display: block;
+  margin: 0 auto;
+}
+
+.speech-bubble p {
+  /* positions text relative to parent */
+  position: absolute;
+  font-family: 'Helvetica Rounded';
+  font-size: 24px;
+  top: 30%;
+  left: 30%;
+}
+
+.cheeto-backpack {
+  display: flex;
+  width: 80%;
+  margin-top: -8vh;
+  padding-left: 10%;
+}
+
+.options-container {
+  /* to organize the toggles vertically with a gap between them */
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.option-btn {
+  /* to style the toggles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  border-radius: 16px;
+  text-decoration: none;
+  border: none;
+  font-family: 'Helvetica Rounded', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-text {
+  /* to remove the background color from the text in the toggle */
+  background-color: transparent;
+}
+
+.status-circle {
+  /* circle on right side of the button */
+  width: 56px;
+  height: 56px;
+  background-color: var(--off-white);
+  border-radius: 100%;
+  position: absolute;
+  right: 27px;
+}
+
+.selector {
+  /* Scribble indicator for the selected toggle */
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  position: absolute;
+  right: 27px;
+}
+
+.btn-shoes {
+  background-color: var(--blue);
+}
+
+.btn-clothes {
+  background-color: var(--green);
+}
+
+.btn-warm {
+  background-color: var(--orange);
+}
+
+.btn-water {
+  background-color: var(--green);
+}
+
+.btn-snack {
+  background-color: var(--blue);
+}
+
+/* BREAK 3 - Results */
+
+.sorry {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cream);
+  border: 1px black;
+  border-radius: 20px;
+  width: 78%;
+  max-width: 90%;
+  margin: 200px auto;
+  padding: 24px;
+  align-items: center;
+}
+
+.card * {
+  background-color: transparent;
+}
+
+.card img {
+  width: 60%;
+  margin: 16px 0;
+}
+
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.qr {
+  position: absolute;
+  left: 230px;
+  top: 640px;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 140px;
+}
