@@ -1,4 +1,3 @@
-
 var countDownDate = new Date("May 8, 2027 11:00:00").getTime();
 
 var x = setInterval(function () {

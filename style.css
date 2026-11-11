@@ -565,7 +565,7 @@ span {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #F7EBC0;
+  background-color: var(--cream);
   border: 1px black;
   border-radius: 20px;
   width: 78%;
