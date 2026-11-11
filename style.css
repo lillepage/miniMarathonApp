@@ -46,6 +46,7 @@ body {
 /*  Header class */
 header {
   position: absolute;
+  top: 0;
   z-index: 2;
   height: 100px;
   width: 100%;
@@ -175,6 +176,26 @@ header {
 }
 
 .main-footer-bg-text {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.extend-footer-bg {
+  display: inline-flex;
+  background-color: var(--cream);
+  height: 171px;
+  position: absolute;
+  top: 1281px;
+  width: 100%;
+}
+
+.extend-footer-bg img {
+  height: 50%;
+  padding-left: 31px;
+  padding-top: 42px;
+}
+
+.extend-footer-bg-text {
   padding-top: 16px;
   padding-left: 16px;
 }
@@ -488,7 +509,10 @@ span {
 }
 
 .cheeto-backpack {
-  width: 100%;
+  display: flex;
+  width: 80%;
+  margin-top: -8vh;
+  padding-left: 10%;
 }
 
 .options-container {
@@ -562,6 +586,11 @@ span {
 
 /* BREAK 3 - Results */
 
+.sorry {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -584,16 +613,22 @@ span {
   margin: 16px 0;
 }
 
-.qr {
+.qr-card {
   display: flex;
-  width: 245px;
-  margin-top: 80px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.qr {
+  position: absolute;
+  left: 230px;
+  top: 640px;
 }
 
 .download {
-  font-family: 'Nunito';
-  font-size: 20px;
-  max-width: 260px;
-  margin: 24px auto;
-  margin-top: 48px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 140px;
 }
